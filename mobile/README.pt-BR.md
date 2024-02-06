@@ -1,0 +1,84 @@
+<h1 align="center">
+    <br>
+    Delivery Orders
+</h1>
+
+<p align="center">
+  <a href="https://nodejs.org">
+    <img alt="versão do Node.js" src="https://img.shields.io/badge/node.js-v20.11.0-43853D?style=flat&logo=node.js&logoColor=white&labelColor=43853D&color=5a5a5a">
+  </a>
+
+  <a href="https://expo.dev">
+    <img alt="versão do Expo SDK" src="https://img.shields.io/badge/expo--sdk-v50.0.5-blue?logo=expo&labelColor=20232A&color=5a5a5a">
+  </a>
+
+  <a href="https://reactnative.dev">
+    <img alt="versão do React Native" src="https://img.shields.io/badge/react--native-v0.73.2-blue?logo=react&labelColor=20232A&color=5a5a5a">
+  </a>
+
+  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/gbdsantos/next-level-week-14-delivery-app.svg">
+
+  <a href="https://github.com/gbdsantos/next-level-week-14-delivery-app/commits/master">
+    <img alt="último commit no GitHub" src="https://img.shields.io/github/last-commit/gbdsantos/next-level-week-14-delivery-app.svg">
+  </a>
+</p>
+
+<div align="center">
+  <details>
+  <summary><b>Demo</b></summary>
+    <div style="width: 90%;">
+      <img alt="Demonstração da aplicação Delivery Orders" src="demo.gif" />
+    </div>
+  </details>
+</div>
+
+<br>
+
+<div align="center">
+  <h4 align="center">leia no idioma</h4>
+  <a href="https://github.com/gbdsantos/next-level-week-14-delivery-app/tree/master/mobile" hreflang="en-us" alt="en-us">🇺🇸 inglês
+  </a>
+</div>
+
+## Sobre
+
+Aplicação desenvolvida durante o evento Next Level Week - Expert.
+
+## Início
+
+```bash
+# 1. Instalar as dependências
+npm install
+
+# 2. Executar o app
+npx expo start
+```
+
+<br>
+
+## Comandos Executados
+
+```bash
+# Criar projeto
+npx create-expo-app --template
+
+# Instalar NativeWind
+npm install nativewind@2.0.11
+
+# Instalar tailwindcss
+npm install tailwindcss@3.3.2 --save-dev
+
+# Inicializar tailwindcss
+npx tailwindcss init
+```
+
+<br>
+
+## Requisitos do ambiente local
+
+- Node.js >=18
+- Java JDK 17
+
+---
+
+Feito com ♥ por Guilherme Bezerra 👋 [Entre em contato!](https://www.linkedin.com/in/gbdsantos "LinkedIn - Guilherme Bezerra")
