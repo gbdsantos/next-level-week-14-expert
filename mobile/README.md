@@ -73,6 +73,9 @@ npx tailwindcss init
 
 # Install Inter font
 npx expo install expo-font @expo-google-fonts/inter
+
+# Install clsx - conditional stylizations
+npm install clsx
 ```
 
 <br>
