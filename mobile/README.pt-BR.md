@@ -70,6 +70,9 @@ npm install tailwindcss@3.3.2 --save-dev
 
 # Inicializar tailwindcss
 npx tailwindcss init
+
+# Instalar fonte Inter
+npx expo install expo-font @expo-google-fonts/inter
 ```
 
 <br>
