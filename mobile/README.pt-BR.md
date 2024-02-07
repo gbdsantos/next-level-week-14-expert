@@ -76,6 +76,9 @@ npx expo install expo-font @expo-google-fonts/inter
 
 # Instalar clsx - Estilizações condicionais
 npm install clsx
+
+# Instalar Zustand
+npm install zustand
 ```
 
 <br>
@@ -84,6 +87,14 @@ npm install clsx
 
 - Node.js >=18
 - Java JDK 17
+
+<br>
+
+## Tecnologias utilizadas
+
+- [NativeWind](https://www.nativewind.dev "NativeWind") - Usa a linguagem de script CSS do tailwind
+- [Tailwindcss](https://tailwindcss.com "Tailwindcss") - Framework CSS utilitário utilizando classes *inline*
+- [Zustand](https://zustand-demo.pmnd.rs "Zustand - State Management") - Uma solução de gerenciamento de estado pequena, rápida e escalável
 
 ---
 
