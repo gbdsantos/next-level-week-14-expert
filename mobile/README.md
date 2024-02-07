@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    Delivery Orders
+    A simple food delivery mobile app
 </h1>
 
 <p align="center">
@@ -79,6 +79,11 @@ npm install clsx
 
 # Install Zustand
 npm install zustand
+
+# Install react-native-keyboard-aware-scroll-view
+# A ScrollView component that handles keyboard appearance
+# and automatically scrolls to focused TextInput.
+npm i react-native-keyboard-aware-scroll-view --save
 ```
 
 <br>

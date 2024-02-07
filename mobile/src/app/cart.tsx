@@ -1,4 +1,4 @@
-import { ScrollView, Text, View } from "react-native"
+import { Alert, ScrollView, Text, View } from "react-native"
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view"
 
 import { Button } from "@/components/button"
@@ -9,7 +9,7 @@ import { Product } from "@/components/product"
 
 import { Feather } from "@expo/vector-icons"
 
-import { useCartStore } from "@/stores/cart-store"
+import { ProductCartProps, useCartStore } from "@/stores/cart-store"
 
 import { formatCurrency } from "@/utils/functions/format-currency"
 
@@ -17,6 +17,20 @@ export default function Cart() {
   const cartStore = useCartStore()
 
   const total = formatCurrency(cartStore.products.reduce((acc, product) => acc + product.price * product.quantity, 0))
+
+  function handleProductRemove(product: ProductCartProps) {
+    Alert.alert(
+      "Remover",
+      `Deseja remover ${product.title} do carrinho?`,
+      [
+        { text: "Cancelar" },
+        {
+          text: "Remover",
+          onPress: () => cartStore.remove(product.id)
+        }
+      ]
+    )
+  }
 
   return (
     <View className="flex-1 pt-8">
@@ -30,7 +44,11 @@ export default function Cart() {
               <View className="border-b border-slate-700">
                 {
                   cartStore.products.map((product) => (
-                    <Product data={product} key={product.id} />
+                    <Product
+                      data={product}
+                      key={product.id}
+                      onPress={() => handleProductRemove(product)}
+                    />
                   ))
                 }
               </View>
@@ -65,7 +83,7 @@ export default function Cart() {
           </Button.Icon>
         </Button>
 
-        <LinkButton href="/" title="Voltar ao cardápio"  />
+        <LinkButton href="/" title="Voltar ao cardápio" />
       </View>
     </View>
   )
