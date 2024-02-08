@@ -60,6 +60,9 @@ npm install
 
 # 2. Executar o app
 npx expo start
+
+# Gerar .apk
+eas build -p android -e development --local
 ```
 
 <br>
