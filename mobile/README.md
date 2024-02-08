@@ -16,6 +16,14 @@
     <img alt="React Native version" src="https://img.shields.io/badge/react--native-v0.73.2-blue?logo=react&labelColor=20232A&color=5a5a5a">
   </a>
 
+  <a href="https://www.nativewind.dev">
+    <img alt="NativeWind version" src="https://img.shields.io/badge/nativewind-v2.0.11-blue?logo=nativewind&labelColor=20232A&color=5a5a5a">
+  </a>
+
+  <a href="https://zustand-demo.pmnd.rs">
+    <img alt="Zustand version" src="https://img.shields.io/badge/zustand-v4.5.0-blue?logo=zustand&labelColor=20232A&color=5a5a5a">
+  </a>
+
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/gbdsantos/next-level-week-14-delivery-app.svg">
 
   <a href="https://github.com/gbdsantos/next-level-week-14-delivery-app/commits/master">
@@ -84,6 +92,9 @@ npm install zustand
 # A ScrollView component that handles keyboard appearance
 # and automatically scrolls to focused TextInput.
 npm i react-native-keyboard-aware-scroll-view --save
+
+# Install expo AsyncStorage
+npx expo install @react-native-async-storage/async-storage
 ```
 
 <br>
