@@ -13,6 +13,7 @@ export type ProductCartProps = ProductProps & {
 type StateProps = {
   products: ProductCartProps[]
   add: (product: ProductProps) => void
+  clear: () => void
   remove: (productId: string) => void
 }
 
@@ -27,7 +28,9 @@ export const useCartStore = create(
   remove: (productId: string) =>
     set((state) => ({
       products: cartInMemory.remove(state.products, productId)
-    }))
+    })),
+
+  clear: () => set(() => ({ products: [] }))
 }), {
   name: "gbdsantos-delivery-app:cart",
   storage: createJSONStorage(() => AsyncStorage)
