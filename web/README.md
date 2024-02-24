@@ -41,7 +41,7 @@
 
 <div align="center">
   <h4 align="center">read in the language</h4>
-  <a href="https://github.com/gbdsantos/next-level-week-14/blob/master/web/README.pt-BR.md" hreflang="pt-br" alt="pt-br">🇧🇷 portuguese
+  <a href="https://github.com/gbdsantos/next-level-week-14-expert/blob/master/web/README.pt-BR.md" hreflang="pt-br" alt="pt-br">🇧🇷 portuguese
   </a>
 </div>
 
@@ -102,11 +102,11 @@ npm install @types/dom-speech-recognition -D
 
 ## Technologies used <a name="technologies"></a>
 
-- [lucide-react](https://lucide.dev/guide/packages/lucide-react "Open-source icons library"){:target="_blank"} - Open-source icon library
-- [Radix](https://radix-ui.com "Radix - Core building blocks for your design system"){:target="_blank"} - Components with unstyled accessibility features
-- [React.js](https://react.dev "React.js - The library for web and native user interfaces"){:target="_blank"} - The library for web and native user interfaces
-- [Sonner](https://sonner.emilkowal.ski "Sonner - An opinionated toast component for React"){:target="_blank"} - Opinionated toast component for React
-- [Tailwindcss](https://tailwindcss.com "Tailwindcss"){:target="_blank"} - Utility-first CSS framework packed with inline classes
+- [lucide-react](https://lucide.dev/guide/packages/lucide-react "Open-source icons library") - Open-source icon library
+- [Radix](https://radix-ui.com "Radix - Core building blocks for your design system") - Components with unstyled accessibility features
+- [React.js](https://react.dev "React.js - The library for web and native user interfaces") - The library for web and native user interfaces
+- [Sonner](https://sonner.emilkowal.ski "Sonner - An opinionated toast component for React") - Opinionated toast component for React
+- [Tailwindcss](https://tailwindcss.com "Tailwindcss") - Utility-first CSS framework packed with inline classes
 
 ---
 

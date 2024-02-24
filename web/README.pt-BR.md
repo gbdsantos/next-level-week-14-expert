@@ -41,7 +41,7 @@
 
 <div align="center">
   <h4 align="center">leia no idioma</h4>
-  <a href="https://github.com/gbdsantos/next-level-week-14/tree/master/web" hreflang="en-us" alt="link para o README em inglês">🇺🇸 inglês
+  <a href="https://github.com/gbdsantos/next-level-week-14-expert/blob/master/web" hreflang="en-us" alt="link para o README em inglês">🇺🇸 inglês
   </a>
 </div>
 
@@ -102,11 +102,11 @@ npm install @types/dom-speech-recognition -D
 
 ## Technologias utilizadas <a name="technologies"></a>
 
-- [lucide-react](https://lucide.dev/guide/packages/lucide-react "Biblioteca de ícone open-source"){:target="_blank"} - Biblioteca de ícone *open-source*
-- [Radix](https://radix-ui.com "Radix - Blocos de construção essenciais para o seu sistema de design"){:target="_blank"} - Biblioteca de componentes com funcionalidades de acessibilidade não-estilizados
-- [React.js](https://react.dev "React.js - A biblioteca para interfaces de usuário web e nativas"){:target="_blank"} - Biblioteca para interfaces de usuário web e nativas
-- [Sonner](https://sonner.emilkowal.ski "Sonner - Um componente toast não-opinado para React"){:target="_blank"} - Componente toast não-opinado para React
-- [Tailwindcss](https://tailwindcss.com "Tailwindcss"){:target="_blank"} - Framework CSS utilitário utilizando classes inline
+- [lucide-react](https://lucide.dev/guide/packages/lucide-react "Biblioteca de ícone open-source") - Biblioteca de ícone *open-source*
+- [Radix](https://radix-ui.com "Radix - Blocos de construção essenciais para o seu sistema de design") - Biblioteca de componentes com funcionalidades de acessibilidade não-estilizados
+- [React.js](https://react.dev "React.js - A biblioteca para interfaces de usuário web e nativas") - Biblioteca para interfaces de usuário web e nativas
+- [Sonner](https://sonner.emilkowal.ski "Sonner - Um componente toast não-opinado para React") - Componente toast não-opinado para React
+- [Tailwindcss](https://tailwindcss.com "Tailwindcss") - Framework CSS utilitário utilizando classes inline
 
 ---
 
