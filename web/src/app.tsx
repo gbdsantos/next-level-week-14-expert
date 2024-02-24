@@ -10,19 +10,29 @@ interface Note {
   content: string
 }
 
+const SAMPLE_NOTES = [
+  {
+    id: crypto.randomUUID(),
+    date: new Date(),
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque."
+  },
+  {
+    id: crypto.randomUUID(),
+    date: new Date(2024, 1, 24),
+    content: "Note example 1"
+  }
+]
+
 export function App() {
-  const [notes, setNotes] = useState<Note[]>([
-    {
-      id: crypto.randomUUID(),
-      date: new Date(),
-      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque."
-    },
-    {
-      id: crypto.randomUUID(),
-      date: new Date(2024, 1, 24),
-      content: "Note 2"
+  const [notes, setNotes] = useState<Note[]>(() => {
+    const notesOnStorage = localStorage.getItem('gbdsantos@notes')
+
+    if (notesOnStorage) {
+      return JSON.parse(notesOnStorage)
     }
-  ])
+
+    return SAMPLE_NOTES
+  })
 
   function oneNoteCreated(content: string) {
     const newNote = {
@@ -31,7 +41,11 @@ export function App() {
       content
     }
 
-    setNotes([newNote, ...notes])
+    const notesArray = [newNote, ...notes]
+
+    setNotes(notesArray)
+
+    localStorage.setItem('gbdsantos@notes', JSON.stringify(notesArray))
   }
 
   return (
