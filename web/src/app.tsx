@@ -20,14 +20,16 @@ export function App() {
 
       <div className="grid grid-cols-3 gap-6 auto-rows-[250px]">
         <NewNoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
+        <NoteCard note={{
+          date: new Date(),
+          content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque."
+          }}
+        />
+        <NoteCard note={{
+          date: new Date(2024, 2, 7),
+          content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in consequuntur quisquam quidem esse? Sapiente culpa alias adipisci aperiam officiis quisquam aspernatur ut neque. Ut quo ipsum reiciendis veritatis eaque."
+          }}
+        />
       </div>
     </div>
   )
