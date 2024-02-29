@@ -1,8 +1,11 @@
 import { randomUUID } from "node:crypto"
 import { FastifyInstance } from "fastify"
-import { prisma } from "../../lib/prisma"
 import { z } from 'zod'
+
 import { redis } from "../../lib/redis"
+import { prisma } from "../../lib/prisma"
+
+import { voting } from "../../utils/voting-pub-sub"
 
 export async function voteonPoll(app: FastifyInstance) {
   app.post('/polls/:pollId/votes', async (request, reply) => {
@@ -37,7 +40,12 @@ export async function voteonPoll(app: FastifyInstance) {
           }
         })
 
-        await redis.zincrby(pollId, -1, userPreviousVoteOnPoll.poll_option_id)
+        const votes = await redis.zincrby(pollId, -1, userPreviousVoteOnPoll.poll_option_id)
+
+        voting.publish(pollId, {
+          pollOptionId: userPreviousVoteOnPoll.poll_option_id,
+          votes: Number(votes),
+        })
       } else if (userPreviousVoteOnPoll) {
         return reply.status(400).send({
           message: "You already voted on this poll.",
@@ -67,7 +75,12 @@ export async function voteonPoll(app: FastifyInstance) {
       }
     })
 
-    await redis.zincrby(pollId, 1, poll_option_id)
+    const votes = await redis.zincrby(pollId, 1, poll_option_id)
+
+    voting.publish(pollId, {
+      pollOptionId: poll_option_id,
+      votes: Number(votes),
+    })
 
     return reply.status(201).send()
   })
