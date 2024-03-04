@@ -9,7 +9,7 @@
   </a>
 
   <a href="https://fastify.io" target="_blank">
-    <img alt="Fastify version" src="https://img.shields.io/badge/fastify-20232A?style=flat&logo=fastify&logoColor=white">
+    <img alt="Fastify logo" src="https://img.shields.io/badge/fastify-20232A?style=flat&logo=fastify&logoColor=white">
   </a>
 
   <img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white" alt="Node.js logo" />
@@ -19,11 +19,11 @@
   </a>
 
   <a href="https://www.postgresql.org" target="_blank">
-    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-&logo=postgresql&logoColor=white" alt="CSS logo" />
+    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-&logo=postgresql&logoColor=white" alt="PostgreSQL logo" />
   </a>
 
-  <a href="https://fastify.io" target="_blank">
-    <img alt="Redis version" src="https://img.shields.io/badge/Redis-dc382c?style=flat&logo=redis&logoColor=white">
+  <a href="https://redis.io/" target="_blank">
+    <img alt="Redis logo" src="https://img.shields.io/badge/Redis-dc382c?style=flat&logo=redis&logoColor=white">
   </a>
 
   <a href="https://www.typescriptlang.org" target="_blank">
@@ -50,8 +50,7 @@
 
 ## About
 
-Polls system using Node.js, Postgres, Redis, TypeScript and Websockets. App development during Next Nevel Week Expert event.
-In
+Polls system using Node.js, Postgres, **Redis**, TypeScript, and **WebSockets**. The Pub/Sub pattern was implemented in endpoint with WebSocket protocol, which ranks (counts) votes using a strategy made possible by Redis.
 
 ## Getting Start
 
