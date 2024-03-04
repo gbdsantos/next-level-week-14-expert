@@ -50,6 +50,8 @@
 
 ## About
 
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Next%20Level%20Week%20-%20Expert%2014%C2%AA%20Edition&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fgbdsantos%2Fnext-level-week-14-expert%2Fmaster%2Fserver%2Finsomnia-collection.json)
+
 Polls system using Node.js, Postgres, **Redis**, TypeScript, and **WebSockets**. The Pub/Sub pattern was implemented in endpoint with WebSocket protocol, which ranks (counts) votes using a strategy made possible by Redis.
 
 ## Getting Start

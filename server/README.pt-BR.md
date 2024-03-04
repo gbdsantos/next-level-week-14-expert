@@ -50,6 +50,8 @@
 
 ## Sobre
 
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Next%20Level%20Week%20-%20Expert%2014%C2%AA%20Edition&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fgbdsantos%2Fnext-level-week-14-expert%2Fmaster%2Fserver%2Finsomnia-collection.json)
+
 Sistema de enquests utilizando Node.js, Postgres, **Redis**, TypeScript e **WebSockets**.
 Foi utilizado o *pattern* Pub/Sub na rota (*endpoint*) com o protocolo WebSocket que faz ranqueamento(contagem) de votos utilizando uma estratégia que o Redis possibilita.
 

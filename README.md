@@ -15,6 +15,13 @@ Different projects was development.
 </details>
 
 <details>
+  <summary><a href="https://github.com/gbdsantos/next-level-week-14-delivery-app/tree/master/server" alt="Note-taking application link">Server</a> - A poll application that allows you to vote</summary>
+  <div style="width: 90%;">
+    <!-- <img alt="Poll application demonstration" src="server/demo.gif" /> -->
+  </div>
+</details>
+
+<details>
   <summary><a href="https://github.com/gbdsantos/next-level-week-14-delivery-app/tree/master/web" alt="Note-taking application link">Web</a> - A note-taking application that allows you to save notes through voice, meaning it can transcribe audio into text</summary>
   <div style="width: 90%;">
     <!-- <img alt="Note-taking application demonstration" src="web/demo.gif" /> -->
